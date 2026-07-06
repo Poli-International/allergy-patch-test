@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <script>
+    if (window.self !== window.top) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      window.addEventListener('message', function(e) {
+        if (e.data && e.data.type === 'poli-theme') {
+          document.documentElement.setAttribute('data-theme', e.data.light ? 'light' : 'dark');
+        }
+      });
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Generate a personalised 96-hour allergy patch test protocol for tattoo inks and body jewellery materials. Covers metals, BioFlex, and pigment testing with observation timings.">
+  <title>Allergy Patch Test Protocol Generator | Poli International</title>
+  <link rel="stylesheet" href="/tools/allergy-patch-test/css/style.css">
+</head>
+<body>
+<div class="tool-wrapper">
+
+  <header class="tool-header">
+    <div class="tool-header__badge">🧪 Patch Test Protocol</div>
+    <h1>Allergy Patch Test Protocol Generator</h1>
+    <p>Generate a step-by-step 96-hour patch test protocol for tattoo inks and body jewellery materials before a procedure.</p>
+  </header>
+
+  <div class="input-card">
+    <div class="form-grid">
+      <div class="form-field">
+        <label for="test-material">What to test</label>
+        <select id="test-material" class="input-field">
+          <option value="">— Select material —</option>
+          <optgroup label="Body jewellery metals">
+            <option value="steel">Surgical steel (nickel content)</option>
+            <option value="titanium">Implant-grade titanium (ASTM F136)</option>
+            <option value="niobium">Niobium</option>
+            <option value="gold-9">9ct gold</option>
+            <option value="gold-18">18ct / 14ct gold</option>
+            <option value="silver">Sterling silver</option>
+          </optgroup>
+          <optgroup label="Flexible / Polymer materials">
+            <option value="bioflex">BioFlex® polymer</option>
+            <option value="ptfe">PTFE / bioplast</option>
+          </optgroup>
+          <optgroup label="Tattoo materials">
+            <option value="ink-black">Tattoo ink — black / greywash</option>
+            <option value="ink-colour">Tattoo ink — colour (specify colour)</option>
+            <option value="numbing">Topical numbing cream (lidocaine)</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="test-site">Test site</label>
+        <select id="test-site" class="input-field">
+          <option value="inner-arm">Inner forearm (recommended)</option>
+          <option value="behind-ear">Behind ear</option>
+          <option value="wrist">Inner wrist</option>
+          <option value="behind-knee">Behind knee</option>
+        </select>
+      </div>
+      <div class="form-field form-field--wide">
+        <label for="skin-sensitivity">Known skin sensitivity</label>
+        <select id="skin-sensitivity" class="input-field">
+          <option value="normal">Normal — no known sensitivities</option>
+          <option value="sensitive">Sensitive skin / eczema-prone</option>
+          <option value="contact-derm">History of contact dermatitis</option>
+          <option value="metal-allergy">Known metal allergy (e.g. nickel)</option>
+        </select>
+      </div>
+    </div>
+    <button class="gen-btn" id="gen-btn" type="button">Generate Patch Test Protocol →</button>
+  </div>
+
+  <div id="result"></div>
+
+  <div class="disclaimer">
+    <strong>Important:</strong> Patch testing does not guarantee a procedure will be reaction-free. Some reactions
+    only present at the full procedural dose. If you have a history of severe allergic reactions (anaphylaxis),
+    consult a dermatologist or allergist before any patch testing. This protocol is not a substitute for
+    professional allergy testing.
+  </div>
+
+</div>
+<script src="/tools/allergy-patch-test/js/app.js"></script>
+</body>
+</html>
