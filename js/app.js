@@ -468,7 +468,7 @@
     var sensitivityHtml = '';
     if (state.sensitivity !== 'normal' && SENSITIVITY_NOTE_KEYS[state.sensitivity]) {
       sensitivityHtml = '<div class="sensitivity-alert" role="note">' +
-        '<strong>⚠️ ' + escHtml(t(SENSITIVITY_KEYS[state.sensitivity])) + ':</strong> ' +
+        '<strong><svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-warn></use></svg> ' + escHtml(t(SENSITIVITY_KEYS[state.sensitivity])) + ':</strong> ' +
         escHtml(t(SENSITIVITY_NOTE_KEYS[state.sensitivity])) +
       '</div>';
     }
@@ -541,7 +541,7 @@
       '<div class="protocol-header">' +
         '<div class="protocol-title">' + escHtml(t('protocol.card_title', { material: matName })) + '</div>' +
         '<div class="protocol-meta">' +
-          '<span>📍 ' + escHtml(siteName) + '</span>' +
+          '<span><svg class=ti-i width=1.15em height=1.15em aria-hidden=true style=vertical-align:-.18em;flex:none><use href=../shared/icons.svg#i-pin></use></svg> ' + escHtml(siteName) + '</span>' +
           '<span class="risk-tag risk-tag--' + matConfig.risk + '">' + escHtml(riskText) + '</span>' +
         '</div>' +
       '</div>' +
